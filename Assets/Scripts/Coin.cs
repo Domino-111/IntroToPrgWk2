@@ -16,8 +16,9 @@ public class Coin : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        GameManager.score += 100;
+        GameManager.score++;
         Debug.Log(GameManager.score);
+        GameManager.gm.UpdateScore();
         Destroy(gameObject);
     }
 }

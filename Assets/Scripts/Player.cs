@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        GameManager.gm.player = gameObject;
     }
 
     void Update()
